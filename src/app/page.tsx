@@ -1,5 +1,6 @@
 import { ThemeToggle } from '@/components/theme-toggle';
-import { Projects, siteConfig } from '@/config/site';
+import { projects, siteConfig } from '@/config/site';
+import { ProjectInfo } from '@/types';
 import ProjectCard from './_components/project-card';
 
 const HomePage = () => {
@@ -28,7 +29,7 @@ const HomePage = () => {
       </div>
 
       <section className="grid w-full max-w-2xl gap-6 p-6 sm:grid-cols-2 lg:max-w-3xl">
-        {Projects.map((project) => (
+        {projects.map((project: ProjectInfo) => (
           <ProjectCard
             key={project.href}
             title={project.title}

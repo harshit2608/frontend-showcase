@@ -1,14 +1,22 @@
-import { ProjectInfo } from "@/types";
+import { ProjectInfo } from '@/types';
 
 export const siteConfig = {
   name: 'Frontend Showcase',
-  description: 'An awesome way to showcase my front-end feats',
-};
+  description:
+    'A collection of my front-end projects and components showcasing my skills.',
+} as const;
 
-export const Projects: ProjectInfo[] = [
+export const projects: ProjectInfo[] = [
   {
-    title: "Testimonial Card",
-    description: "Explore a beautiful, responsive testimonial card component.",
-    href: "/testimonial-card",
+    title: 'Testimonial Card',
+    description:
+      'A beautifully crafted, fully responsive testimonial card component, showcasing user feedback in a sleek design.',
+    href: '/testimonial-card',
+  },
+  {
+    title: 'Blog Card',
+    description:
+      'A minimalist and modern blog card design, complete with an image and post preview to display blog content attractively.',
+    href: '/blog-card',
   },
 ];

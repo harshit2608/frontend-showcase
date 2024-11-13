@@ -14,6 +14,37 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: '/',
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: '/images/preview.png',
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [
+      {
+        url: '/images/preview.png',
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  appleWebApp: {
+    title: siteConfig.name,
+    statusBarStyle: 'default',
+  },
 };
 
 export default function RootLayout({
@@ -23,13 +54,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-      </head>
-      <body className={cn('dark:bg-[#1f1f1f]', inter.className)}>
+      <head />
+      <body
+        className={cn(
+          'flex min-h-screen animate-fade-in-left flex-col transition-transform duration-700 ease-in-out dark:bg-[#1f1f1f]',
+          inter.className,
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

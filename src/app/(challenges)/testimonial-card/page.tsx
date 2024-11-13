@@ -16,7 +16,7 @@ const TestimonialCardPage = () => {
       )}
       data-testid="sarah-dole-testimonial-card"
     >
-      <div className="flex max-w-[19rem] transform rounded-[8px] bg-white p-6 shadow">
+      <div className="flex max-w-[340px] transform rounded-[8px] bg-white p-6 shadow">
         <div className="flex flex-col items-start space-y-4">
           <div className="flex items-center space-x-4">
             <Image
@@ -35,7 +35,7 @@ const TestimonialCardPage = () => {
             </div>
           </div>
 
-          <p className="font-normal text-neutral-600">
+          <p className="text-base font-normal text-neutral-600">
             I&apos;ve been searching for high-quality abstract images for my
             design projects, and I&apos;m thrilled to have found this platform.
             The variety and depth of creativity are astounding!
