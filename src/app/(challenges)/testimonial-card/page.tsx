@@ -11,12 +11,12 @@ const TestimonialCardPage = () => {
   return (
     <div
       className={cn(
-        'flex min-h-screen min-w-full items-center justify-center bg-gradient-to-br from-white to-[#D2D6DB]',
+        'flex h-full min-w-full items-start justify-center bg-gradient-to-br from-white to-[#D2D6DB] pt-[200px]',
         notoSansFont.className,
       )}
       data-testid="sarah-dole-testimonial-card"
     >
-      <div className="max-w-[19rem] transform rounded-[8px] bg-white p-6 shadow transition-transform duration-300">
+      <div className="flex max-w-[19rem] transform rounded-[8px] bg-white p-6 shadow">
         <div className="flex flex-col items-start space-y-4">
           <div className="flex items-center space-x-4">
             <Image

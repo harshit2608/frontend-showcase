@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 
-const isProductionEnv = process.env.NODE_ENV == 'production';
-
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
-  basePath: isProductionEnv ? '/frontend-showcase' : '',
-  output: 'export',
-  assetPrefix: isProductionEnv ? '/frontend-showcase/' : '',
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: isProd ? '/frontend-showcase/' : '',
+  basePath: isProd ? '/frontend-showcase' : '',
+  output: 'export'
 };
 
 export default nextConfig;
