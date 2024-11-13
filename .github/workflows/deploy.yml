@@ -1,4 +1,4 @@
-name: Build and Deploy frontedn-showcase
+name: Build and Deploy frontend-showcase
 
 on:
   push:
