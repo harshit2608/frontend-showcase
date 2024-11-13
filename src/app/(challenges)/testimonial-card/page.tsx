@@ -31,11 +31,11 @@ const TestimonialCardPage = () => {
               <h1 className="text-lg font-semibold text-gray-900">
                 Sarah Dole
               </h1>
-              <p className="font-normal text-neutral-600">@sarahdole</p>
+              <p className="text-sm font-normal text-neutral-600">@sarahdole</p>
             </div>
           </div>
 
-          <p className="text-sm font-normal text-neutral-600">
+          <p className="font-normal text-neutral-600">
             I&apos;ve been searching for high-quality abstract images for my
             design projects, and I&apos;m thrilled to have found this platform.
             The variety and depth of creativity are astounding!

@@ -1,7 +1,5 @@
 # Frontend Showcase
 
-![Build and Deploy](https://github.com/harshit2608/frontend-showcase/actions/workflows/deploy.yml/badge.svg)
-
 Welcome to the **Frontend Showcase** repository! This repository represents a showcase of my frontend project.
 
 This project was scaffolded using a custom **[Next.js Starter Template](https://github.com/harshit2608/nextjs-starter-template)**, providing a well-structured foundation for rapid frontend development.
