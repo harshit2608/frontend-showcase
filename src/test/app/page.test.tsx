@@ -4,11 +4,10 @@ import HomePage from '@/app/page';
 import { siteConfig } from '@/config/site';
 
 beforeAll(() => {
-  // Mock the matchMedia API to simulate light/dark mode
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
     value: (query: string) => ({
-      matches: query === '(prefers-color-scheme: dark)' ? false : true, // Set to false to simulate light mode
+      matches: query === '(prefers-color-scheme: dark)' ? false : true,
       media: query,
       onchange: null,
       addListener: jest.fn(),
@@ -29,18 +28,10 @@ describe('HomePage', () => {
     );
   });
 
-  it('renders the page with all main elements', () => {
+  it('renders the page with all main elements and displays correct title and description', () => {
     const homePage = screen.getByTestId('home-page');
     expect(homePage).toBeInTheDocument();
 
-    const header = screen.getByRole('heading', { level: 1 });
-    expect(header).toHaveTextContent(`Welcome to ${siteConfig.name}`);
-
-    const description = screen.getByRole('heading', { level: 2 });
-    expect(description).toHaveTextContent(siteConfig.description);
-  });
-
-  it('displays the correct site title and description from siteConfig', () => {
     const header = screen.getByRole('heading', { level: 1 });
     expect(header).toHaveTextContent(`Welcome to ${siteConfig.name}`);
 
