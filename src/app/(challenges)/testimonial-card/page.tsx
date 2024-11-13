@@ -25,12 +25,13 @@ const TestimonialCardPage = () => {
               alt="Sarah Dole"
               src="/images/testimonial-sarah.png"
               className="rounded-full"
+              priority
             />
             <div>
               <h1 className="text-lg font-semibold text-gray-900">
                 Sarah Dole
               </h1>
-              <p className="text-sm font-normal text-neutral-600">@sarahdole</p>
+              <p className="font-normal text-neutral-600">@sarahdole</p>
             </div>
           </div>
 
